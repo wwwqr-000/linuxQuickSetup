@@ -1,4 +1,4 @@
-echo Reminder: execute the command as a root.
+echo -e "\e[31mReminder: execute the command as a root.\e[0m"
 apt-get update
 apt-get upgrade
 apt-get install apache2 php mariadb-server php-mysql phpmyadmin
