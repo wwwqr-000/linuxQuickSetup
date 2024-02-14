@@ -1,7 +1,4 @@
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install apache2 
-sudo apt-get install php
-sudo apt-get install mariadb-server 
-sudo apt-get install php-mysql
-sudo apt-get install phpmyadmin
+echo Reminder: execute the command as a root.
+apt-get update
+apt-get upgrade
+apt-get install apache2 php mariadb-server php-mysql phpmyadmin
