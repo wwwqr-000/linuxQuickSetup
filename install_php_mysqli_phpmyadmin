@@ -2,3 +2,8 @@ echo -e "\e[31mReminder: execute the command as a root.\e[0m"
 apt-get update
 apt-get upgrade
 apt-get install -y apache2 php mariadb-server php-mysql phpmyadmin
+chown -R www-data:www-data /usr/share/phpmyadmin
+ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+a2enconf phpmyadmin
+systemctl restart apache2
+chmod -R 0777 /usr/share/phpmyadmin
